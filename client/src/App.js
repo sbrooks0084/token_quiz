@@ -8,7 +8,7 @@ function App() {
 
   const getAuth = async () => {
     try {
-      const data = await fetch('http://localhost:3543/api/')
+      const data = await fetch('http://localhost:3543/api/auth')
       const token = await data.json()
       localStorage.setItem('xAuthToken', token);
       if(localStorage.getItem('xAuthToken')) {
