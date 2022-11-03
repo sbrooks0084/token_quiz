@@ -1,8 +1,10 @@
 const crypto = require("crypto");
 
-exports.generate = function() {
-    return crypto.randomInt(0, 1000000)
+function generate() {
+    return crypto.randomInt(0, 100000)
 }
+
+module.exports = generate
 
 
 
